@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>1</title>
+    <script src="https://cdn.jsdelivr.net/npm/@visactor/vchart@latest/build/index.min.js"></script>
+</head>
+<body>
+    <div id="chart" style="width: 600px; height: 400px;"></div>
+    
+    <script>
+        // 使用全局变量 VChart
+VChart.registerLiquidChart();
+
+const spec = {
+  type: 'liquid',
+  valueField: 'value',
+  maskShape: 'drop',
+  outlineMargin: 20,
+  outlinePadding: 20,
+  indicatorSmartInvert: true,
+  data: {
+    id: 'data',
+    values: [
+      {
+        value: 0.5
+      }
+    ]
+  },
+  indicator: {
+    visible: true,
+    title: {
+      visible: true,
+      style: {
+        text: '进度'
+      }
+    },
+    content: [
+      {
+        visible: true,
+        style: {
+          fill: 'black',
+          text: '100%'
+        }
+      }
+    ]
+  }
+};
+
+  
+        const vchart = new VChart.default(spec, {
+            dom: 'chart'
+        });
+
+        
+        vchart.renderSync();
+    </script>
+</body>
+</html>
