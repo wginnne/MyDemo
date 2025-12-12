@@ -104,7 +104,7 @@ const createSettings = (id, value) => ({
 
 const buildSpecs = (vseed) => {
   const specsArray = []; 
-  const rowCount = vseed[1].length;
+  const rowCount = vseed.length;
 
   for (let i = 0; i < rowCount; i++) {
     const items = ValueAndText(vseed, i);
