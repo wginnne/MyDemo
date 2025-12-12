@@ -1,9 +1,13 @@
+
+# pipeline
 First of all, what is pipeline:
 make a big task break into some small steps, (where the output of the steps is the input of the next step. )
-  a.core: composition:we may can use some parts for many times, so we can ues composition to use one parts repeadly.
-  b.FP:1.pipeline is pure function, one input only get one foxed output.
-    2.function cannot change any values which isn't belong the function,such as global values...
-    3.function can also see as an value like number,string.... it can also be the input and output of an function.
+  ## core: 
+  composition:we may can use some parts for many times, so we can ues composition to use one parts repeadly.
+  ### FP:
+  1.pipeline is pure function, one input only get one foxed output.
+  2.function cannot change any values which isn't belong the function,such as global values...
+  3.function can also see as an value like number,string.... it can also be the input and output of an function.
 
 
 
