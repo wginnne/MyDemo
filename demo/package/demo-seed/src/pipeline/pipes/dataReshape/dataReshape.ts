@@ -1,3 +1,4 @@
+import { sign } from "crypto";
 import { IVSeed } from "../../../types/VSeed";
 
 
@@ -13,6 +14,7 @@ export const dataReshape = (spec:any, vseed:IVSeed) =>{
       setDimension(null,vseed);
     }
 
+    SingleIndex(spec,vseed);
     return{};
 
 }
@@ -78,3 +80,4 @@ const SingleIndex = (spec: any, vseed: IVSeed) => {
   }
 
 };
+
